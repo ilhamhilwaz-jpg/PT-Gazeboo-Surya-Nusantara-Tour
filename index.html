@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>PT. Gazeboo Surya Nusantara Tour &amp; Travel</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/lucide@0.263.1/dist/umd/lucide.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Header & Navigasi -->
+    <header>
+      <div class="wrap nav">
+        <a href="#beranda" class="logo">
+          <img
+            src="logo.png"
+            alt="Logo PT. Gazeboo Surya Nusantara Tour &amp; Travel"
+          />
+          <div>GAZEBOO<small>SURYA NUSANTARA TOUR &amp; TRAVEL</small></div>
+        </a>
+
+        <nav class="menu" id="menu">
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#destinasi">Destinasi</a>
+          <a href="#paket">Paket Tour</a>
+          <a href="#kontak">Kontak</a>
+          <!-- Tombol Pesan Sekarang khusus di dalam menu HP -->
+          <a href="#kontak" class="btn amber mobile-cta">Pesan Sekarang</a>
+        </nav>
+
+        <a href="#kontak" class="btn amber navcta">Pesan Sekarang</a>
+
+        <!-- Tombol Menu 3 Garis di Kanan (Mobile) -->
+        <button
+          type="button"
+          class="burger"
+          id="burger"
+          aria-label="Buka Menu"
+          aria-expanded="false"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="26"
+            height="26"
+            stroke="currentColor"
+            stroke-width="2.4"
+            fill="none"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="beranda">
+        <div class="slides">
+          <span class="sl s1"></span>
+          <span class="sl s2"></span>
+          <span class="sl s3"></span>
+          <span class="sl s4"></span>
+        </div>
+        <div class="shade"></div>
+        <div class="wrap">
+          <h1>
+            Jelajahi Keindahan <em>Nusantara</em> &amp; Dunia Bersama Kami
+          </h1>
+          <p>
+            Pengalaman liburan terbaik dengan perjalanan nyaman, pemandu
+            berpengalaman, dan kenangan yang tak terlupakan.
+          </p>
+        </div>
+      </section>
+
+      <!-- Kotak Pencarian Cepat -->
+      <div class="wrap search">
+        <div class="sbox">
+          <div class="f">
+            <label for="sd"><i data-lucide="map-pin"></i>Destinasi</label>
+            <select id="sd">
+              <option value="">Pilih Destinasi</option>
+              <option value="Bali">Bali</option>
+              <option value="Raja Ampat">Raja Ampat</option>
+              <option value="Labuan Bajo">Labuan Bajo</option>
+              <option value="Bromo &amp; Ijen">Bromo &amp; Ijen</option>
+              <option value="Lombok">Lombok</option>
+              <option value="Jepang">Jepang</option>
+            </select>
+          </div>
+          <div class="f">
+            <label for="st"
+              ><i data-lucide="calendar"></i>Tanggal Berangkat</label
+            >
+            <input type="date" id="st" />
+          </div>
+          <div class="f">
+            <label for="sp"><i data-lucide="users"></i>Jumlah Orang</label>
+            <input type="number" id="sp" min="1" value="2" />
+          </div>
+          <button type="button" class="btn" id="sbtn">Cari Trip</button>
+        </div>
+      </div>
+
+      <!-- Tentang Kami -->
+      <section id="tentang">
+        <div class="wrap about">
+          <div class="rv">
+            <span class="tag">Tentang Kami</span>
+            <h2>Mitra Perjalanan Terpercaya Anda</h2>
+            <p>
+              PT. Gazeboo Surya Nusantara Tour &amp; Travel berbasis di Surabaya
+              dan melayani perjalanan wisata ke berbagai penjuru Indonesia
+              hingga mancanegara, dengan itinerary fleksibel dan pelayanan yang
+              ramah.
+            </p>
+            <div class="vm">
+              <div>
+                <i data-lucide="eye"></i>
+                <p>
+                  <b>Visi</b
+                  ><span
+                    >Menjadi biro perjalanan pilihan utama yang memperkenalkan
+                    keindahan Nusantara ke dunia.</span
+                  >
+                </p>
+              </div>
+              <div>
+                <i data-lucide="target"></i>
+                <p>
+                  <b>Misi</b
+                  ><span
+                    >Menghadirkan paket wisata berkualitas, aman, transparan,
+                    dan berkesan bagi setiap pelanggan.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stats rv">
+            <div class="stat">
+              <i data-lucide="smile"></i><strong data-n="500">500+</strong
+              ><span>Pelanggan Puas</span>
+            </div>
+            <div class="stat">
+              <i data-lucide="map"></i><strong data-n="50">50+</strong
+              ><span>Destinasi</span>
+            </div>
+            <div class="stat">
+              <i data-lucide="award"></i><strong data-n="5">5+</strong
+              ><span>Tahun Pengalaman</span>
+            </div>
+            <div class="stat">
+              <i data-lucide="headset"></i><strong>24/7</strong
+              ><span>Layanan Bantuan</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinasi Unggulan -->
+      <section class="alt" id="destinasi">
+        <div class="wrap">
+          <div class="head rv">
+            <span class="tag">Destinasi Unggulan</span>
+            <h2>Pilih Petualangan Impian Anda</h2>
+            <p class="sub">
+              Destinasi paling diminati wisatawan, siap dijelajahi bersama kami.
+            </p>
+          </div>
+          <div class="grid">
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--bali), linear-gradient(135deg, #0f9f6e, #f59e0b);
+                "
+              >
+                <b>Bali<small>Pura Ulun Danu Beratan, Bedugul</small></b>
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>4 Hari 3 Malam</span
+                  ><span class="price">Rp 3,2 jt</span>
+                </div>
+                <button type="button" class="btn o" data-d="Trip Bali (4H3M)">
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--raja), linear-gradient(135deg, #0a6b4a, #38bdf8);
+                "
+              >
+                <b
+                  >Raja Ampat<small>Kepulauan Wayag, Papua Barat Daya</small></b
+                >
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>5 Hari 4 Malam</span
+                  ><span class="price">Rp 9,5 jt</span>
+                </div>
+                <button
+                  type="button"
+                  class="btn o"
+                  data-d="Trip Raja Ampat (5H4M)"
+                >
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--labuan), linear-gradient(135deg, #065f46, #34d399);
+                "
+              >
+                <b
+                  >Labuan Bajo<small>Pulau Padar, Nusa Tenggara Timur</small></b
+                >
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>3 Hari 2 Malam</span
+                  ><span class="price">Rp 4,8 jt</span>
+                </div>
+                <button
+                  type="button"
+                  class="btn o"
+                  data-d="Trip Labuan Bajo (3H2M)"
+                >
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--jepang), linear-gradient(135deg, #be185d, #f59e0b);
+                "
+              >
+                <b>Jepang<small>Gunung Fuji &amp; Danau Kawaguchi</small></b>
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>7 Hari 6 Malam</span
+                  ><span class="price">Rp 18 jt</span>
+                </div>
+                <button type="button" class="btn o" data-d="Trip Jepang (7H6M)">
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--bromo), linear-gradient(135deg, #7c2d12, #f59e0b);
+                "
+              >
+                <b>Bromo &amp; Ijen<small>Gunung Bromo, Jawa Timur</small></b>
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>3 Hari 2 Malam</span
+                  ><span class="price">Rp 1,9 jt</span>
+                </div>
+                <button
+                  type="button"
+                  class="btn o"
+                  data-d="Trip Bromo &amp; Ijen (3H2M)"
+                >
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+
+            <article class="card rv">
+              <div
+                class="ph"
+                style="
+                  background-image:
+                    var(--lombok), linear-gradient(135deg, #0e7490, #6ee7b7);
+                "
+              >
+                <b>Lombok<small>Gunung Tunak, Lombok Tengah, NTB</small></b>
+              </div>
+              <div class="bd">
+                <div class="meta">
+                  <span><i data-lucide="clock"></i>4 Hari 3 Malam</span
+                  ><span class="price">Rp 3,6 jt</span>
+                </div>
+                <button type="button" class="btn o" data-d="Trip Lombok (4H3M)">
+                  Tanya Trip Ini
+                </button>
+              </div>
+            </article>
+          </div>
+          <p class="note">
+            *Harga mulai dari per orang, dapat berubah sesuai musim dan
+            ketersediaan.
+          </p>
+        </div>
+      </section>
+
+      <!-- Paket Tour Pilihan -->
+      <section id="paket">
+        <div class="wrap">
+          <div class="head rv">
+            <span class="tag">Paket Tur Pilihan</span>
+            <h2>Paket Lengkap, Tinggal Berangkat</h2>
+            <p class="sub">
+              Semua sudah diatur: akomodasi, transportasi, dan pemandu.
+            </p>
+          </div>
+          <div class="grid">
+            <article class="card pk rv">
+              <div
+                class="ph pk-ph"
+                style="
+                  background-image:
+                    var(--bali), linear-gradient(135deg, #0f9f6e, #f59e0b);
+                "
+              >
+                <span class="badge">Terlaris</span>
+              </div>
+              <div class="bd">
+                <h3>Bali Escape Premium</h3>
+                <ul>
+                  <li><i data-lucide="hotel"></i>Hotel bintang 4</li>
+                  <li><i data-lucide="plane"></i>Tiket pesawat PP</li>
+                  <li><i data-lucide="user-check"></i>Pemandu wisata lokal</li>
+                </ul>
+                <div class="foot">
+                  <div>
+                    <small>mulai dari</small
+                    ><span class="price">Rp 5,9 jt</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn"
+                    data-d="Bali Escape Premium"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card pk rv">
+              <div
+                class="ph pk-ph"
+                style="
+                  background-image:
+                    var(--labuan), linear-gradient(135deg, #0a6b4a, #38bdf8);
+                "
+              >
+                <span class="badge">Favorit</span>
+              </div>
+              <div class="bd">
+                <h3>Labuan Bajo Sailing</h3>
+                <ul>
+                  <li><i data-lucide="ship"></i>Kapal phinisi 2 malam</li>
+                  <li><i data-lucide="plane"></i>Tiket pesawat PP</li>
+                  <li>
+                    <i data-lucide="user-check"></i>Pemandu &amp; snorkeling
+                  </li>
+                </ul>
+                <div class="foot">
+                  <div>
+                    <small>mulai dari</small
+                    ><span class="price">Rp 6,5 jt</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn"
+                    data-d="Labuan Bajo Sailing"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card pk rv">
+              <div
+                class="ph pk-ph"
+                style="
+                  background-image:
+                    var(--jepang), linear-gradient(135deg, #be185d, #f59e0b);
+                "
+              >
+                <span class="badge">Internasional</span>
+              </div>
+              <div class="bd">
+                <h3>Jepang Sakura Journey</h3>
+                <ul>
+                  <li><i data-lucide="hotel"></i>Hotel pilihan 7 malam</li>
+                  <li><i data-lucide="plane"></i>Tiket pesawat PP</li>
+                  <li>
+                    <i data-lucide="user-check"></i>Tour leader berbahasa
+                    Indonesia
+                  </li>
+                </ul>
+                <div class="foot">
+                  <div>
+                    <small>mulai dari</small><span class="price">Rp 21 jt</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn"
+                    data-d="Jepang Sakura Journey"
+                  >
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimoni -->
+      <section class="alt">
+        <div class="wrap">
+          <div class="head rv">
+            <span class="tag">Testimoni</span>
+            <h2>Kata Mereka Tentang Kami</h2>
+          </div>
+          <div class="grid">
+            <article class="card t rv">
+              <div class="stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i>
+              </div>
+              <p>
+                Itinerary rapi, pemandunya ramah dan sabar. Trip Bali kami
+                berjalan lancar tanpa drama sama sekali.
+              </p>
+              <div class="who">
+                <div class="av">R</div>
+                <div><b>Rina Aprilia</b><small>Trip Bali</small></div>
+              </div>
+            </article>
+
+            <article class="card t rv">
+              <div class="stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i>
+              </div>
+              <p>
+                Sailing Labuan Bajo luar biasa! Harga transparan dan admin fast
+                response dari awal sampai pulang.
+              </p>
+              <div class="who">
+                <div class="av">D</div>
+                <div><b>Dimas Pratama</b><small>Trip Labuan Bajo</small></div>
+              </div>
+            </article>
+
+            <article class="card t rv">
+              <div class="stars">
+                <i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i><i data-lucide="star"></i
+                ><i data-lucide="star"></i>
+              </div>
+              <p>
+                Pertama kali ke Jepang bersama keluarga dan merasa aman. Pasti
+                akan booking lagi tahun depan.
+              </p>
+              <div class="who">
+                <div class="av">S</div>
+                <div><b>Siti Nurhaliza</b><small>Trip Jepang</small></div>
+              </div>
+            </article>
+          </div>
+          <p class="note">
+            *Contoh testimoni, ganti dengan ulasan pelanggan asli.
+          </p>
+        </div>
+      </section>
+
+      <!-- Banner CTA -->
+      <section class="banner">
+        <div class="wrap rv">
+          <span class="tag banner-tag">Dari Sabang sampai Merauke</span>
+          <h2>Wujudkan Liburan Impian di Nusantara</h2>
+          <p>
+            Gunung, pantai, candi, dan budaya yang memukau menunggu Anda. Biar
+            kami yang mengatur perjalanannya.
+          </p>
+          <a href="#kontak" class="btn amber">Konsultasi Gratis</a>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak">
+        <div class="wrap">
+          <div class="head rv">
+            <span class="tag">Hubungi Kami</span>
+            <h2>Mulai Rencanakan Perjalanan Anda</h2>
+            <p class="sub">
+              Tim kami siap membantu menyusun itinerary terbaik sesuai kebutuhan
+              dan anggaran Anda.
+            </p>
+          </div>
+          <div class="contact">
+            <form class="form rv" id="cform">
+              <div class="f">
+                <label for="cname">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="cname"
+                  required
+                  placeholder="Masukkan nama Anda"
+                />
+              </div>
+              <div class="f">
+                <label for="cphone">Nomor WhatsApp</label>
+                <input
+                  type="tel"
+                  id="cphone"
+                  required
+                  placeholder="0812-xxxx-xxxx"
+                />
+              </div>
+              <div class="f">
+                <label for="cdest">Destinasi / Paket Diminati</label>
+                <input
+                  type="text"
+                  id="cdest"
+                  placeholder="Contoh: Bali Escape Premium"
+                />
+              </div>
+              <div class="f">
+                <label for="cmsg">Pesan / Rencana Tanggal</label>
+                <textarea
+                  id="cmsg"
+                  rows="3"
+                  placeholder="Ceritakan rencana liburan Anda..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+
+            <div class="info rv">
+              <div class="row">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <b>Kantor Pusat</b
+                  ><small>Surabaya, Jawa Timur, Indonesia</small>
+                </div>
+              </div>
+              <div class="row">
+                <i data-lucide="phone"></i>
+                <div>
+                  <b>Telepon / WhatsApp</b><small>+62 822-4501-2140</small>
+                </div>
+              </div>
+              <div class="row">
+                <i data-lucide="mail"></i>
+                <div><b>Email</b><small>info@gazebotravel.co.id</small></div>
+              </div>
+              <div class="row">
+                <i data-lucide="clock"></i>
+                <div>
+                  <b>Jam Operasional</b
+                  ><small>Senin – Sabtu: 08.00 – 17.00 WIB</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap">
+        <div>
+          &copy; 2026 PT. Gazeboo Surya Nusantara Tour &amp; Travel. Hak Cipta
+          Dilindungi.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notifikasi -->
+    <div id="toast" role="status" aria-live="polite">
+      <i data-lucide="check-circle"></i><span id="tmsg">Pesan terkirim!</span>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+
+        // Menu Mobile (Tombol 3 Garis)
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+        if (burger && menu) {
+          burger.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = menu.classList.toggle("open");
+            burger.setAttribute("aria-expanded", isOpen);
+          });
+
+          menu.querySelectorAll("a").forEach((a) => {
+            a.addEventListener("click", () => {
+              menu.classList.remove("open");
+              burger.setAttribute("aria-expanded", "false");
+            });
+          });
+
+          document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && !burger.contains(e.target)) {
+              menu.classList.remove("open");
+              burger.setAttribute("aria-expanded", "false");
+            }
+          });
+        }
+
+        // Animasi Angka Statistik saat Masuk Layar
+        if ("IntersectionObserver" in window) {
+          const obs = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  e.target.classList.add("in");
+                  e.target.querySelectorAll("[data-n]").forEach((el) => {
+                    if (el.dataset.done) return;
+                    el.dataset.done = "1";
+                    const target = parseInt(el.dataset.n, 10);
+                    let cur = 0;
+                    const step = Math.max(1, Math.ceil(target / 40));
+                    const timer = setInterval(() => {
+                      cur += step;
+                      if (cur >= target) {
+                        el.textContent = target + "+";
+                        clearInterval(timer);
+                      } else {
+                        el.textContent = cur;
+                      }
+                    }, 30);
+                  });
+                }
+              });
+            },
+            { threshold: 0.1 },
+          );
+          document.querySelectorAll(".rv").forEach((el) => obs.observe(el));
+        }
+
+        // Notifikasi Toast
+        function showToast(msg) {
+          const t = document.getElementById("toast");
+          document.getElementById("tmsg").textContent = msg;
+          t.classList.add("show");
+          setTimeout(() => t.classList.remove("show"), 3500);
+        }
+
+        // Pencarian Cepat
+        document.getElementById("sbtn").addEventListener("click", () => {
+          const d = document.getElementById("sd").value;
+          const t = document.getElementById("st").value;
+          const p = document.getElementById("sp").value;
+          if (d) document.getElementById("cdest").value = d;
+          if (t || p) {
+            document.getElementById("cmsg").value =
+              `Rencana berangkat: ${t || "-"}, Jumlah peserta: ${p} orang.`;
+          }
+          document
+            .getElementById("kontak")
+            .scrollIntoView({ behavior: "smooth" });
+          showToast("Data trip diisikan ke form kontak!");
+        });
+
+        // Tombol Pilih Paket / Destinasi
+        document.querySelectorAll("[data-d]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            document.getElementById("cdest").value = btn.dataset.d;
+            document
+              .getElementById("kontak")
+              .scrollIntoView({ behavior: "smooth" });
+            showToast(`"${btn.dataset.d}" dipilih!`);
+          });
+        });
+
+        // Submit Form Kontak
+        document.getElementById("cform").addEventListener("submit", (e) => {
+          e.preventDefault();
+          showToast("Terima kasih! Tim kami akan segera menghubungi Anda.");
+          e.target.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
